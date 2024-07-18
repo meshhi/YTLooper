@@ -11,7 +11,7 @@ chrome.runtime.onInstalled.addListener(({ reason }) => {
 });
 
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
-    if (message.type === 'ms-cast') {
+    if (message.type === 'getSeconds') {
         const startSecond = convertMsToSeconds(message.start);
         const endSecond = convertMsToSeconds(message.end);
         const duration = endSecond - startSecond;
