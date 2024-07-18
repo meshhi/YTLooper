@@ -1,0 +1,14 @@
+{
+  "name": "loop-part-yt",
+  "description": "Loop part of video on youtube",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["activeTab", "scripting", "storage"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "service-worker.js",
+    "type": "module"
+  }
+}
