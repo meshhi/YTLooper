@@ -2,7 +2,7 @@
 // loop statuses
 const INCORRECT_PATH = 'Incorrect URL path(go to youtube)';
 const LOOP_RUNNING = 'Loop running';
-const READY_TO_RUN = 'Ready to run loop';
+const READY_TO_RUN = 'Ready to run new loop';
 const CANT_DEFINE = 'Cant define';
 // dom elements
 const loopBtn = document.getElementById("loop");

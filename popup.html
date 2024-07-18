@@ -5,14 +5,16 @@
     <link rel="stylesheet" href="popup.css" />
   </head>
   <body>
-    <div class="container">
+    <div class="input-container">
       <label for="start-time">segment start</label>
-      <input type="text" id="start-time" value="00:00" />
+      <input type="text" pattern="[A-Za-z]{3}" id="start-time" value="00:00" />
       <label for="start-time">segment end</label>
       <input type="text" id="end-time" value="00:02" />
     </div>
-    <button id="loop">Loop segment</button>
-    <button id="stop-loop">Stop loop</button>
+    <div class="btn-container">
+      <button id="loop" class="btn">Loop segment</button>
+      <button id="stop-loop" class="btn">Stop loop</button>
+    </div>
     <div id="extension-status"></div>
     <script src="popup.js"></script>
   </body>
